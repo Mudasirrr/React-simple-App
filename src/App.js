@@ -58,9 +58,14 @@ class App extends Component{
     const { characters } = this.state;
     return (
       <div className="container">
+      
+        <h1>React Simple App</h1>
+        <p>Add a character with a name and a job to the table.</p>
         {/*//this is just for props
         <Table characterData={characters}/>*/}
         <Table characterData={characters} removeCharacter={this.removeCharacter} />
+      
+        <h3>Add New</h3>
         <Form handleSubmit={this.handleSubmit}/>
       </div>
     );
